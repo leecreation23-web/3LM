@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizArc | Minimal Quiz Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <span class="brand__logo">QA</span>
+        <div>
+          <p class="brand__title">QuizArc</p>
+          <p class="brand__subtitle">Cohort Control</p>
+        </div>
+      </div>
+      <nav class="nav" role="navigation">
+        <button class="nav__item is-active" data-route="dashboard">
+          <span class="nav__icon">📊</span>
+          <span>Dashboard</span>
+        </button>
+        <button class="nav__item" data-route="library">
+          <span class="nav__icon">📚</span>
+          <span>Quiz Library</span>
+        </button>
+        <button class="nav__item" data-route="sessions">
+          <span class="nav__icon">📝</span>
+          <span>Live Session</span>
+        </button>
+        <button class="nav__item" data-route="reports">
+          <span class="nav__icon">📈</span>
+          <span>Reports</span>
+        </button>
+        <button class="nav__item" data-route="settings">
+          <span class="nav__icon">⚙️</span>
+          <span>Settings</span>
+        </button>
+      </nav>
+      <div class="nav__footer">
+        <button class="btn btn--ghost" id="themeToggle" aria-label="Toggle theme">
+          <span>🌗</span>
+          <span>Mode</span>
+        </button>
+        <button class="btn btn--primary" id="newQuizBtn">
+          <span>＋</span>
+          <span>New Quiz</span>
+        </button>
+      </div>
+    </aside>
+    <main class="main" id="main" tabindex="-1">
+      <!-- Dynamic content is injected here by app.js -->
+    </main>
+  </div>
+  <template id="modalTemplate">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog" role="document">
+        <header class="modal__header">
+          <h2 class="modal__title"></h2>
+          <button class="modal__close" aria-label="Close dialog">×</button>
+        </header>
+        <div class="modal__body"></div>
+      </div>
+    </div>
+  </template>
+  <script src="./js/data.js" type="module"></script>
+  <script src="./js/app.js" type="module"></script>
+</body>
+</html>
