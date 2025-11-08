@@ -106,3 +106,22 @@ Its goal: **make AI understand film direction through syntax** — where timing,
 Created and Designed by **Ahamed Sharaf**, Founder of *The Catalyst*.
 © 2025 — The Catalyst Creative Systems.
 *Open format for cinematic AI creators worldwide.*
+
+---
+
+## ⚡ QuizArc Platform (Prototype)
+
+This repository now also includes **QuizArc**, a minimalist quiz administration experience with a live dashboard, quiz library, reporting surface, and an interactive quiz player.
+
+### ▶️ Quick start
+
+1. Open `public/index.html` in a modern browser (Chrome, Edge, Safari, or Firefox).
+2. Interact with the left navigation to explore:
+   - **Dashboard**: Cohort snapshots, trending quizzes, and latest submissions.
+   - **Quiz Library**: Launch assessments or create new ones from the modal builder.
+   - **Live Session**: Configure timed runs and generate a shareable join code.
+   - **Reports**: Export cohort results as CSV and review attempt history.
+   - **Settings**: Tweak branding accents and notification cadence (client-side persistence).
+3. Start any quiz to experience the full-screen quiz player with timer, progress, and scoring.
+
+> _Note:_ The prototype stores data in-memory for demonstration. Refreshing the page resets to the sample dataset defined in `public/js/data.js`.
